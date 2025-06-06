@@ -65,8 +65,6 @@ def pack(root_dir, output_format='text'):
                 print()
             print(f"[packed] {rel_path}", file=sys.stderr)
 
-            print(f"[packed] {rel_path}", file=sys.stderr)
-
     if output_format == 'json':
         print(json.dumps(files_data, indent=2, ensure_ascii=False))
 
