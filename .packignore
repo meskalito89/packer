@@ -19,4 +19,4 @@ README.md
 .gitlab-ci-local
 .gitignore
 .packignore
-requirements.txt
+# requirements.txt
