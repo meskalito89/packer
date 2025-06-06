@@ -1,1 +1,22 @@
-ci_cd
+
+# Игнорировать все .log и .pyc
+*.log
+*.pyc
+
+# Игнорировать директорию build/
+build/
+
+# Игнорировать все из __pycache__ в любом месте
+**/__pycache__/
+
+# Игнорировать README.md, но оставить readme_dev.md
+README.md
+!readme_dev.md
+
+
+.venv/
+.git
+.gitlab-ci-local
+.gitignore
+.packignore
+requirements.txt
