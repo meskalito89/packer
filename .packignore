@@ -18,3 +18,5 @@ README.md
 .git
 .gitlab-ci-local
 .gitignore
+.packignore
+requirements.txt
