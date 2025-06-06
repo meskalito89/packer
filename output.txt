@@ -1,4 +1,31 @@
+--- FILE: output.txt ---
+
+
+--- FILE: .packignore ---
+
+# Игнорировать все .log и .pyc
+*.log
+*.pyc
+
+# Игнорировать директорию build/
+build/
+
+# Игнорировать все из __pycache__ в любом месте
+**/__pycache__/
+
+# Игнорировать README.md, но оставить readme_dev.md
+README.md
+!readme_dev.md
+
+
+.venv/
+.git
+.gitlab-ci-local
+testfile
+
+--- FILE: packer.py ---
 import os
+from pdb import set_trace
 import sys
 import json
 import pathspec
@@ -131,3 +158,7 @@ if __name__ == '__main__':
 
     else:
         usage()
+
+--- FILE: .gitignore ---
+.venv
+
